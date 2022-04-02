@@ -28,6 +28,30 @@ class Solution
 public:
     ListNode *reverseList(ListNode *head)
     {
+        /*
+        Approach : Two Pointer
+        1. Have a prev & next pointer initially at NULL.
+        2. Starting from first node first set next = curr->next, then set curr->next = prev;
+        3. Then set prev = curr and curr = next
+        4. Loop breaks when curr = NULL, return prev
+        */
+
+        // Corner cases
+        if (head == NULL or head->next == NULL)
+            return head;
+
+        ListNode *prev = NULL;
+        ListNode *next = NULL;
+        ListNode *curr = head;
+
+        while (curr)
+        {
+            next = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = next;
+        }
+        return prev;
     }
 };
 // @lc code=end
