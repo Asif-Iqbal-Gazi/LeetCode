@@ -21,6 +21,7 @@ public:
         /*
         Approach: Two Variables
         */
+
         int n = nums.size();
         int result = 0, count = 0;
         for (int i = 0; i < n; i++)
