@@ -27,8 +27,6 @@ public:
         5. If sum is greater, then we decrease right pointer (Sorted non-decreasing array)
         6. If sum is less, then we increase left pointer (Sorted non-decreasing array)
         */
-        ios_base::sync_with_stdio(false);
-        cin.tie(NULL);
 
         int i = 0, j = numbers.size() - 1, sum = 0;
         while (true)
