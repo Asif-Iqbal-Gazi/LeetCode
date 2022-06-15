@@ -20,7 +20,7 @@ public:
     {
         /* Approach: Simple Binary Search */
         int l = 0, r = nums.size() - 1;
-        while (l < r)
+        while (l <= r)
         {
             int m = l + (r - l) / 2;
             if (nums[m] == target)
@@ -30,7 +30,7 @@ public:
             else
                 l = m + 1;
         }
-        return nums[l] < target ? (l + 1) : l;
+        return l;
     }
 };
 // @lc code=end
