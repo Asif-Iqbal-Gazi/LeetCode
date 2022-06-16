@@ -5,6 +5,14 @@
  */
 
 // @lc code=start
+const static auto fast = []
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return 0;
+}();
+
 class Solution
 {
 public:
@@ -12,11 +20,10 @@ public:
     {
         /*
         Approach:
-        1. Create map for each character with it's frequency
-        2. Next check for frequency and if it is 1 then return the index
+        1. Using Map
+            Create map for each character with it's frequency
+            Next check for frequency and if it is 1 then return the index
         */
-        ios_base::sync_with_stdio(false);
-        cin.tie(NULL);
 
         int n = s.size();
         int seen[26] = {0};

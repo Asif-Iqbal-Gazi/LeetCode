@@ -5,39 +5,65 @@
  */
 
 // @lc code=start
+const static auto fast = []
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return 0;
+}();
+
 class Solution
 {
 public:
     int lengthOfLongestSubstring(string s)
     {
         /*
-        Approach: Hash Table
-        1. While looping through each char in the string, check if the char is already present is hashtable
-        2. If not present just increase the current count and insert the char in hash table.
-        3. However, if present then set current count to zero and remove the element from hash table.
+        Approach:
+        1. Sliding Window + Unordered_Set -- O(N). SC: O(N)
         */
-        ios_base::sync_with_stdio(false);
-        cin.tie(NULL);
 
-        unordered_set<char> set;
-        int i = 0, res = 0, curr_len = 0, n = s.size();
+        // Approach 1
+        unordered_set<char> charSet;
+
+        int l = 0, res = 0, n = s.size();
+
+        for (int r = 0; r < n; r++)
+        {
+            while (charSet.find(s[r]) != charSet.end())
+            {
+                charSet.erase(s[l]);
+                l++;
+            }
+            charSet.insert(s[r]);
+            res = max(res, r - l + 1);
+        }
+        return res;
+
+        /* Naive Solution
+        unordered_map<char, int> map;
+
+        int i = 0, n = s.size(), max_len = 0, curr_len = 0;
 
         while (i < n)
         {
-            if (set.find(s[i]) != set.end())
+            auto it = map.find(s[i]);
+            if (it == map.end())
             {
-                curr_len = 1;
-                set.erase(s[i]);
+                map[s[i]] = i;
+                curr_len++;
             }
             else
             {
-                set.insert(s[i]);
-                curr_len++;
-                res = max(curr_len, res);
+                curr_len = 0;
+                i = it->second;
+                map.clear();
             }
             i++;
+            max_len = max(curr_len, max_len);
         }
-        return res;
+        return max_len;
+        */
     }
 };
 // @lc code=end

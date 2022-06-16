@@ -16,44 +16,68 @@ const static auto fast = []
 class Solution
 {
 public:
-    vector<vector<string> > groupAnagrams(vector<string> &strs)
+    vector<vector<string>> groupAnagrams(vector<string> &strs)
     {
         /*
-        Approach: Use map
-        Observe, all strings will consist of lowercase alphabets. (97 to 122 in decimal)
-        1. Create an unordered_map<int, vector<string>>
-        2. We will calculate unique key as a1e1t1 (for: eat, ate, tea)
-        3. While building the map we first calculate the key, if key is not in the map we insert it as vector string against the key in the map.
-        4. If it exist, then we grab the value for the key (which is a vector<string>) and push_back our new string.
-        */
-        int n = strs.size();
+        Approach:
+        1. Unordered_Map -- O(NK), SC(NK)
+            Idea: is to create unique map for anagrams.
+            Observe, strs[i] contains only lowercase english alphabets (ASCII 97 - 122)
+            Thus, we can create a 26 digit long string "0000000....000" initally,
+            then based on each strs[i] we can create unique key string (eg: "1110000000..00", for "abc", "bca" etc.)
 
-        vector<vector<string> > result;
-        unordered_map<string, vector<string> > map;
+            With above technique and imploring a Unorder_map<sting, vector<string> we can solve this.
+        2. Unordered_Map + Sorted strs[i] as key -- O(NKlogK) , SC: O(NK)
+        3. Unique prime for each lowercase alphabet to generate product for string key
+            Downside: Overflow (??)
+        */
+
+        /* Approach 1
+        int n = strs.size();
+        vector<vector<string>> result;
+        unordered_map<string, vector<string>> anagramMap;
 
         for (int i = 0; i < n; i++)
         {
-            // This key char array will be our char_map
+            // Initial key
             string key(26, '0');
-            // Build the char_map, will be unique for anagrams.
+            // Build charmap for strs[i]
             for (char c : strs[i])
-            {
-                key[c - 'a'] += 1;
+                key[c - 'a']++;
+
+            // New let's build anagram map
+            auto it = anagramMap.find(key);
+            if (it != anagramMap.end())
+            { // String with this key is present, insert the new entry.
+                (it->second).emplace_back(strs[i]);
             }
-            // If the key is not present insert in our map.
-            if (map.find(key) == map.end())
-                map[key] = {strs[i]};
-            // If key present the grab the value (vector<string>) push_back the string into it.
             else
-            {
-                map[key].emplace_back(strs[i]);
-            }
+                // A new key
+                anagramMap[key] = {strs[i]};
         }
-        // Finally, iterate through our map and build the result vector.
-        for (auto it = map.begin(); it != map.end(); it++)
-        {
+
+        // Finally, Iterate through our anagramMap for output
+        for (auto it = anagramMap.begin(); it != anagramMap.end(); it++)
             result.emplace_back(it->second);
+        return result;
+        */
+
+        // Approach 2: Sorted strs[i] as key
+        int n = strs.size();
+        vector<vector<string>> result;
+        unordered_map<string, vector<string>> anagramMap;
+        // Building anagram map
+        for (auto str : strs)
+        {
+            auto key = str;
+            // Sorted strs[i] as key
+            sort(key.begin(), key.end());
+            anagramMap[key].emplace_back(str);
         }
+        // Might save some time during emaplace_back
+        result.reserve(anagramMap.size());
+        for (auto it : anagramMap)
+            result.emplace_back(it.second);
         return result;
     }
 };

@@ -5,6 +5,14 @@
  */
 
 // @lc code=start
+const static auto fast = []
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return 0;
+}();
+
 class Solution
 {
 public:
@@ -12,28 +20,20 @@ public:
     {
         /*
         Approach:
-        Use a map
+        1. Unordered_map -- O(N), SC: O(N)
         */
-        ios_base::sync_with_stdio(false);
-        cin.tie(NULL);
 
         int n = nums.size();
-        vector<int> res;
+
         unordered_map<int, int> map;
+
         for (int i = 0; i < n; i++)
         {
             if (map.find(target - nums[i]) != map.end())
-            {
-                res.emplace_back(map.find(target - nums[i])->second);
-                res.emplace_back(i);
-                return res;
-            }
-            else
-            {
-                map[nums[i]] = i;
-            }
+                return {map.find(target - nums[i])->second, i};
+            map[nums[i]] = i;
         }
-        return res;
+        return {-1, -1};
     }
 };
 // @lc code=end
