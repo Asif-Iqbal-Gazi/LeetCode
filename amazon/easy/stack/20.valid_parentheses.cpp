@@ -19,12 +19,13 @@ public:
     bool isValid(string s)
     {
         /*
-        Approach: Using Stack
-        1. First check if there are even numbers of parenthesis, if not return false immediately
-        2. Also, check if the first one is a closing parenthesis, if so return false immediately
-        3. Inside a loop check if the char is a openning bracket, if so then push paired closing bracket in the stack.
-        4. However, if it is a closing bracket, check the top of the stack, check if they are equal(Remember, we always push closing bracket)
-        5. Finally, check if the set is empty
+        Approach:
+        1. Using Stack -- TC: O(N), SC: O(N)
+            First check if there are even numbers of parenthesis, if not return false immediately
+            Also, check if the first one is a closing parenthesis, if so return false immediately
+            Inside a loop check if the char is a openning bracket, if so then push paired closing bracket in the stack.
+            However, if it is a closing bracket, check the top of the stack, check if they are equal(Remember, we always push closing bracket)
+            Finally, check if the set is empty
         */
 
         // Odd number of brackets, return false
