@@ -32,8 +32,7 @@ public:
             st.push_back({val, val});
         else
         {
-            int m = st.back().second();
-            st.push_back({val, m});
+            st.push_back({val, min(st.back().second, val)});
         }
     }
 
@@ -44,12 +43,12 @@ public:
 
     int top()
     {
-        st.back().first();
+        return st.back().first;
     }
 
     int getMin()
     {
-        st.back().second();
+        return st.back().second;
     }
 
     /* Approach 1
@@ -95,7 +94,8 @@ private:
     vector<pair<int, int>> st;
 
     /* Approach 1
-    stack<int> ms;
+    stack<int>
+        ms;
     stack<int> as;
     */
 };
