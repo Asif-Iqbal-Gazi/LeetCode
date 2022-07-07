@@ -19,7 +19,7 @@ public:
     bool canVisitAllRooms(vector<vector<int>> &rooms)
     {
         /* Approach:
-            1. BFS -- T.C:O(sum(rooms[i].size())), S.C:O(sum(rooms[i].size()))
+            1. BFS -- T.C:O(N + E), S.C:O(N); N : No of Rooms, E: No of Keys
         */
 
         int n = rooms.size();
