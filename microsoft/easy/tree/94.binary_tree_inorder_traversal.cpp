@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode id=144 lang=cpp
+ * @lc app=leetcode id=94 lang=cpp
  *
- * [144] Binary Tree Preorder Traversal
+ * [94] Binary Tree Inorder Traversal
  */
 
 // @lc code=start
@@ -27,47 +27,48 @@ const static auto fast = []
 class Solution
 {
 public:
-    void doPreOrderTraversalRecursion(TreeNode *root, vector<int> &ans)
+    void doInOrderTraversal(TreeNode *root, vector<int> &ans)
     {
-        if (root == NULL)
+        if (!root)
             return;
-        ans.push_back(root->val);
-        doPreOrderTraversalRecursion(root->left, ans);
-        doPreOrderTraversalRecursion(root->right, ans);
+        doInOrderTraversal(root->left, ans);
+        ans.emplace_back(root->val);
+        doInOrderTraversal(root->right, ans);
     }
-    vector<int> preorderTraversal(TreeNode *root)
+
+    vector<int> inorderTraversal(TreeNode *root)
     {
         /* Approach:
             1. Recursion -- T.C: O(n), S.C: O(h); n: No of node, h: height of the tree
             2. Iterative -- T.C: O(n), S.C: O(h)
         */
 
-        // Iterative Solution
-        if (!root)
-            return {};
+        /* Approach 1
+        vector<int> ans;
+        doInOrderTraversal(root, ans);
+        return ans;
+        */
+
+        // Approach 2
         vector<int> ans;
         stack<TreeNode *> st;
 
-        st.push(root);
-        while (!st.empty())
+        TreeNode *curr = root;
+
+        while (curr || !st.empty())
         {
-            TreeNode *curr = st.top();
+            while (curr)
+            {
+                st.push(curr);
+                curr = curr->left;
+            }
+            // Out of loop, meaning we hit a NULL
+            curr = st.top();
             st.pop();
-            ans.push_back(curr->val);
-            if (curr->right != NULL)
-                st.push(curr->right);
-            if (curr->left != NULL)
-                st.push(curr->left);
+            ans.emplace_back(curr->val);
+            curr = curr->right;
         }
         return ans;
-
-        /* Using Recursion
-        if (!root)
-            return {};
-        vector<int> ans;
-        doPreOrderTraversalRecursion(root, ans);
-        return ans;
-        */
     }
 };
 // @lc code=end
