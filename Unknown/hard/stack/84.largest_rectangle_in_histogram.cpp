@@ -33,10 +33,10 @@ public:
             We get the previous smaller during poping from stack
         */
 
-        // Approach 2: Efiicient Solution
-
-        int n = heights.size(), res = 0;
+        // Approach 3 -- Efficient Algorithm
+        int res = 0;
         stack<int> s;
+        int n = heights.size();
 
         for (int i = 0; i <= n; i++)
         {
@@ -52,68 +52,72 @@ public:
         return res;
 
         /* Approach 2
-        int n = heights.size(), res = 0;
-        vector<int> prev(n, -1);
-        vector<int> next(n, n);
-        stack<int> s1, s2;
+        int res = 0;
+        int n = heights.size();
+        stack<int> s;
+        int prevSmaller[n];
+        int nextSmaller[n];
 
-        // Prepare Next Smallest Height Array
-        s1.push(n - 1);
-        for (int i = n - 2; i >= 0; i--)
-        {
-            while (!s1.empty() && heights[s1.top()] >= heights[i])
-                s1.pop();
-            next[i] = s1.empty() ? n : s1.top();
-            s1.push(i);
-        }
-
-        // Prepare Prev Smallest Height Array
-        s2.push(0);
-        for (int i = 1; i < n; i++)
-        {
-            while (!s2.empty() && heights[s2.top()] >= heights[i])
-                s2.pop();
-            prev[i] = s2.empty() ? -1 : s2.top();
-            s2.push(i);
-        }
-
-        // Now calculate area taking each height as smallest
+        // Calculate prevSmaller array
         for (int i = 0; i < n; i++)
         {
-            int curr = heights[i];
-            curr += (i - prev[i] - 1) * heights[i];
-            curr += (next[i] - i - 1) * heights[i];
-            res = max(res, curr);
+            while (!s.empty() && heights[s.top()] >= heights[i])
+                s.pop();
+
+            prevSmaller[i] = s.empty() ? 0 : s.top() + 1;
+            s.push(i);
         }
+
+        // Empty the stack for reuse in nextSmaller array calculation
+        while (!s.empty())
+            s.pop();
+
+        // Calculate nextSmaller array
+        for (int i = n - 1; i >= 0; i--)
+        {
+            while (!s.empty() && heights[s.top()] >= heights[i])
+                s.pop();
+
+            nextSmaller[i] = s.empty() ? n - 1 : s.top() - 1;
+            s.push(i);
+        }
+
+        // Next pass to calculate the area
+        for (int i = 0; i < n; i++)
+        {
+            int curr_area = heights[i] * (nextSmaller[i] - prevSmaller[i] + 1);
+            res = max(res, curr_area);
+        }
+
         return res;
         */
 
-        /* Approach 1 (Gets TLE due TC)
-        int n = heights.size(), res = 0;
-
+        /* Approach 1 -- Bruteforce
+        int res = 0;
+        int n = heights.size();
         for (int i = 0; i < n; i++)
         {
-            int curr = heights[i];
-            // Find the bars towards left of the current bar with height greater or equal
+            int curr_area = heights[i];
+            // Find bars towards left with height >= heights[i]
             for (int j = i - 1; j >= 0; j--)
             {
                 if (heights[j] >= heights[i])
                     // Keep adding the area
-                    curr += heights[i];
+                    curr_area += heights[i];
                 else
                     break;
             }
-            // Find the bars towards right of the current bar with height greater or equal
+            // Find bars towards right with height >= heights[i]
             for (int j = i + 1; j < n; j++)
             {
-                if (heights[j] >= heights[i])
+                if (heights[i] <= heights[j])
                     // Keep adding the area
-                    curr += heights[i];
+                    curr_area += heights[i];
                 else
                     break;
             }
-            // Now update the global result
-            res = max(res, curr);
+            // Update the res varibale
+            res = max(res, curr_area);
         }
         return res;
         */
