@@ -27,19 +27,37 @@ public:
     bool hasCycle(ListNode *head)
     {
         /*
-        Approach : Floyd Cycle Detection
-        1. Use first and slow pointer.
-        2. If they meeet there is a loop
+        Approach:
+            1. Naive Method -- T.C: O(N), S.C: O(1)
+            2. Floyd Cycle Detection
         */
-        ListNode *slow_p = head;
-        ListNode *fast_p = head;
+
+        /* Approach 1
+        ListNode *curr = head;
+        unordered_set<ListNode *> s;
+
+        while (curr)
+        {
+            if (s.find(curr) != s.end())
+                return true;
+            s.insert(curr);
+            curr = curr->next;
+        }
+        return false;
+        */
+
+        // Approach 2
         if (head == NULL)
             return false;
-        while (fast_p->next && fast_p->next->next)
+
+        ListNode *slow = head;
+        ListNode *fast = head;
+
+        while (fast->next && fast->next->next)
         {
-            slow_p = slow_p->next;
-            fast_p = fast_p->next->next;
-            if (slow_p == fast_p)
+            slow = slow->next;
+            fast = fast->next->next;
+            if (slow == fast)
                 return true;
         }
         return false;
