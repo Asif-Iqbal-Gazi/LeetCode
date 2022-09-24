@@ -117,8 +117,8 @@ public:
         // Creating chessboard
         string s(n, '.');
         vector<string> board(n, s);
-        // Set to find safe position
-        vector<int> left(n, 0);
+        // Set to find safe position (Improves T.C)
+        vector<int> left(n, 0); // Basically marks the row-wise position of queen
         vector<int> upwardDiagonal(2 * n - 1, 0);
         vector<int> downwardDiagonal(2 * n - 1, 0);
         solveNQueens(0, n, board, left, upwardDiagonal, downwardDiagonal, res);

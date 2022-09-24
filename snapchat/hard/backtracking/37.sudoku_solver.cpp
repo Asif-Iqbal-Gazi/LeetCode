@@ -8,48 +8,50 @@
 class Solution
 {
 private:
-    bool isValid(int row, int col, char choice, vector<vector<char>> &board)
+    bool isValid(char c, int row, int col, vector<vector<char>> &board)
     {
-        // Validity check
         for (int i = 0; i < 9; i++)
         {
-            // Column wise
-            if (board[row][i] == choice)
+            // Check row-wise
+            if (board[i][col] == c)
                 return false;
-            // Row wise
-            if (board[i][col] == choice)
+            // Check col-wise
+            if (board[row][i] == c)
                 return false;
-            // Grid wise
-            if (board[3 * (row / 3) + i / 3][3 * (col / 3) + i % 3] == choice)
+            // Check 3x3 board
+            if (board[3 * (row / 3) + i / 3][3 * (col / 3) + i % 3] == c)
                 return false;
         }
         return true;
     }
-
     bool solve(vector<vector<char>> &board)
     {
+        // Using Two Loops iterate over the entire board
         for (int i = 0; i < 9; i++)
         {
             for (int j = 0; j < 9; j++)
             {
-                // Check if the cell is empty
                 if (board[i][j] == '.')
                 {
+                    // Found an empty spot
                     for (char c = '1'; c <= '9'; c++)
                     {
-                        if (isValid(i, j, c, board))
+                        // Check if we are allowed to place c in this position
+                        if (isValid(c, i, j, board))
                         {
                             board[i][j] = c;
                             if (solve(board) == true)
-                                return true;
+                                return true; // No need to go further in recursion just return true
                             else
-                                board[i][j] = '.';
+                                board[i][j] = '.'; // Backtracking
                         }
                     }
+                    // If we were able to solve, we should have returned true by now
                     return false;
                 }
             }
         }
+        // We have checked the entire board, not empty spot
         return true;
     }
 
