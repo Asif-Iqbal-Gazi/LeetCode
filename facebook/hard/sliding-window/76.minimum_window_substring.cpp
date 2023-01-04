@@ -20,8 +20,52 @@ public:
     {
         /* Approach:
             1. Sliding Window -- T.C: O(M + N), S.C: O(N)
+            2. Sliding Window Optimised -- T.C: O(M + N), S.C: O(M + N)
         */
 
+        // Approach 2
+        int m = s.size();
+        int n = t.size();
+        // Edge case
+        if (n > m)
+            return "";
+
+        // Char Map -- ASCII (0-128)
+        vector<int> charMap(128, 0);
+
+        // Build the char map
+        for (char c : t)
+            charMap[c]++;
+
+        int left = 0;
+        int right = 0;
+        int counter = n;
+        int minStart = 0;
+        int minSize = INT_MAX;
+
+        while (right < m)
+        {
+            if (charMap[s[right]] > 0)
+                counter--;
+            charMap[s[right]]--;
+            right++;
+
+            while (counter == 0)
+            {
+                if (minSize > right - left)
+                {
+                    minSize = right - left;
+                    minStart = left;
+                }
+                charMap[s[left]]++;
+                if (charMap[s[left]] > 0)
+                    counter++;
+                left++;
+            }
+        }
+        return minSize == INT_MAX ? "" : s.substr(minStart, minSize);
+
+        /* Approach 1
         int m = s.size();
         int n = t.size();
 
@@ -80,6 +124,7 @@ public:
         }
 
         return minWindowlen == INT_MAX ? "" : s.substr(leftIndexOfSubstring, minWindowlen);
+        */
     }
 };
 // @lc code=end
