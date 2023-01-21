@@ -30,8 +30,22 @@ public:
     {
         /* Approach:
             1. Recursion -- T.C: O(N), S.C: O(h); N : Total Number of nodes, h : Height of the tree
+            2. Iterative -- T.C: O(N), S.C: O(1)
         */
 
+        // Approach 2
+        TreeNode *curr = root;
+
+        while (curr && curr->val != val)
+        {
+            if (curr->val > val)
+                curr = curr->left;
+            else
+                curr = curr->right;
+        }
+        return curr;
+
+        /* Approach 1
         // Base Case
         if (!root)
             return NULL;
@@ -41,6 +55,7 @@ public:
             return searchBST(root->right, val);
         else
             return searchBST(root->left, val);
+        */
     }
 };
 // @lc code=end
