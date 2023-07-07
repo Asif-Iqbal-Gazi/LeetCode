@@ -16,7 +16,38 @@ public:
             3. sliding Window + Unordered_map -- T.C: O(N), S.C: O(N) -- Optimal Solution as it will ensure single pass
         */
 
-        // Approach 3
+        // Blind Attempt
+        int ans = 0;
+        int n = s.size();
+        int l = 0, r = 0;
+
+        unordered_map<char, int> charMap;
+
+        while (r < n)
+        {
+            // Increment Count of char
+            charMap[s[r]]++;
+
+            if (charMap.size() == r - l + 1)
+            {
+                // Window contains all unique char
+                ans = max(ans, r - l + 1);
+            }
+            else if (charMap.size() < r - l + 1)
+            {
+                // Window contains repeated chars
+                charMap[s[l]]--;
+                if (charMap[s[l]] == 0)
+                    charMap.erase(s[l]);
+                l++;
+            }
+
+            r++;
+        }
+
+        return ans;
+
+        /* Approach 3
         int ans = 0;
         int n = s.size();
         int l = 0, r = 0;
@@ -32,6 +63,7 @@ public:
         }
 
         return ans;
+        */
 
         /* Approach 2
         int ans = 0;

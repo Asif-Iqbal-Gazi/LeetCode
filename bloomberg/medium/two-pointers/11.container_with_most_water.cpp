@@ -5,52 +5,49 @@
  */
 
 // @lc code=start
-const static auto fast = []
-{
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    return 0;
-}();
-
 class Solution
 {
 public:
     int maxArea(vector<int> &height)
     {
         /* Approach:
-            1. Bruteforce -- T.C: O(N^2), S.C: O(1) -- Gets TLE
-            2. Two Pointer Approach -- T.C: O(N), S.C: O(1)
+            1. Bruteforce -- T.C: O(n^2), S.C: O(1)
+            2. Two Pointers -- T.C: O(n), S.C: O(1)
         */
 
-        /* Bruteforce
-        int res = 0;
+        // Approach 2
+        int ans = 0;
+        int area = 0;
+
+        int left = 0;
+        int right = height.size() - 1;
+
+        while (left < right)
+        {
+            area = (right - left) * min(height[left], height[right]);
+            ans = max(ans, area);
+            if (height[left] < height[right])
+                left++;
+            else
+                right--;
+        }
+
+        return ans;
+
+        /* Approach 1
+        int ans = 0;
+        int area = 0;
         int n = height.size();
 
-        for(int i=0; i<n-1; i++){
-            for(int j=i+1; j<n; j++){
-                int area = (j-1)*min(height[i],height[j]);
-                res = max(res, area);
+        for(int i = 0; i < n - 1; i++) {
+            for(int j = i + 1; j < n; j++) {
+                area = (j - i) * min(height[i], height[j]);
+                ans = max(ans, area);
             }
         }
-        return res;
+
+        return ans;
         */
-
-        // Two Pointer Optimal Approach
-        int res = 0;
-        int l = 0;
-        int r = height.size() - 1;
-
-        while (l < r)
-        {
-            int area = (r - l) * min(height[l], height[r]);
-            res = max(res, area);
-            if (height[l] < height[r])
-                l++;
-            else
-                r--;
-        }
-        return res;
     }
 };
 // @lc code=end
