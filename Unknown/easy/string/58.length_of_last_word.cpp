@@ -35,11 +35,11 @@ public:
         {
             s.pop_back();
         }
-
+        // Fix left and right pointer
         n = s.size();
         r = n - 1;
         l = r;
-
+        // Find the length of last word
         while (l >= 0 && s[l] != ' ')
             l--;
 
