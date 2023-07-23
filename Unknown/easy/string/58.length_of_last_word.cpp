@@ -30,7 +30,7 @@ public:
         if (s[l - 1] == ' ')
             l--;
         int noOfCharsToRemove = n - l + 1;
-
+        // Remove all trailing zeros & unnecessary chars
         while (--noOfCharsToRemove)
         {
             s.pop_back();
