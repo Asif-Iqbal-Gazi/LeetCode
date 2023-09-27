@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode id=316 lang=cpp
+ * @lc app=leetcode id=1081 lang=cpp
  *
- * [316] Remove Duplicate Letters
+ * [1081] Smallest Subsequence of Distinct Characters
  */
 
 // @lc code=start
@@ -59,7 +59,7 @@ class Solution {
     }
 
    public:
-    string removeDuplicateLetters(string s) {
+    string smallestSubsequence(string s) {
         /* Approach:
              1. DP (Bit Masking) -- T.C: O(n * k * 2^26), T.C: O(n * k * 2^26) -- TLE
              2. Using Monotonic Stack -- T.C: O(n), S.C: O(n)
