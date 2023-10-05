@@ -5,74 +5,60 @@
  */
 
 // @lc code=start
-class Solution
-{
-public:
-    vector<int> majorityElement(vector<int> &nums)
-    {
+class Solution {
+   public:
+    vector<int> majorityElement(vector<int>& nums) {
         /* Approach:
             1. Using Map -- T.C: O(N), S.C: O(N)
-            2. Using Moore's Voting Algo -- T.C: O(N), S.C: O(1)
+            2. Using Moore's Voting Algorithm -- T.C: O(N), S.C: O(1)
         */
 
         // Approach 2
-        vector<int> res;
         int n = nums.size();
-        int count1 = 0, count2 = 0;
-        int candidate1 = -1, candidate2 = -1;
+        int countOne = 0, countTwo = 0;
+        int candidateOne = 0, candidateTwo = 0;
 
-        for (int x : nums)
-        {
-
-            if (x == candidate1)
-                count1++;
-            else if (x == candidate2)
-                count2++;
-            else if (count1 == 0)
-            {
-                candidate1 = x;
-                count1++;
-            }
-            else if (count2 == 0)
-            {
-                candidate2 = x;
-                count2++;
-            }
-            else
-            {
-                count1--;
-                count2--;
+        for (int x : nums) {
+            if (x == candidateOne)
+                countOne++;
+            else if (x == candidateTwo)
+                countTwo++;
+            else if (countOne == 0) {
+                countOne++;
+                candidateOne = x;
+            } else if (countTwo == 0) {
+                countTwo++;
+                candidateTwo = x;
+            } else {
+                countOne--;
+                countTwo--;
             }
         }
-        count1 = count2 = 0;
-        for (int x : nums)
-        {
-            if (x == candidate1)
-                count1++;
-            else if (x == candidate2)
-                count2++;
+        // Note: countOne and countTwo does not give actual frequencies of
+        // candidateOne & candidateTwo
+        countOne = countTwo = 0;
+        for (int x : nums) {
+            if (x == candidateOne)
+                countOne++;
+            else if (x == candidateTwo)
+                countTwo++;
         }
-        if (count1 > n / 3)
-            res.push_back(candidate1);
-        if (count2 > n / 3)
-            res.push_back(candidate2);
 
-        return res;
+        vector<int> result;
+        if (countOne > n / 3) result.push_back(candidateOne);
+        if (countTwo > n / 3) result.push_back(candidateTwo);
+        return result;
 
         /* Approach 1
-        vector<int> result;
         int n = nums.size();
-        int majorityFreq = n / 3;
-        unordered_map<int, int> map;
-
-        // Building the map
-        for (int x : nums)
-        {
-            map[x]++;
-            if (map[x] > majorityFreq)
-            {
+        int maxFreq = n / 3;
+        vector<int> result;
+        unordered_map<int, int> freq;
+        for (int x : nums) {
+            freq[x]++;
+            if (freq[x] > maxFreq) {
                 result.push_back(x);
-                map[x] = INT_MIN;
+                freq[x] = INT_MIN;  // To avoid repeatation
             }
         }
         return result;
