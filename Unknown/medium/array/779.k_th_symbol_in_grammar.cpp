@@ -5,48 +5,39 @@
  */
 
 // @lc code=start
-const static auto fast = []
-{
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    return 0;
-}();
-
-class Solution
-{
-public:
-    int kthGrammar(int n, int k)
-    {
+class Solution {
+   public:
+    int kthGrammar(int n, int k) {
         /* Approach:
-            1. Recursion:
-                Observe for n = 4 our rows are as follow:
+            1. Recursion -- T.C: O(n), S.C: O(n)
+            2. Math -- T.C: O(log k), S.C: O(1)
+        */
+
+        /* Observation:
+            Observe, for n = 4 our rows are:
                 0
                 0 1
                 0 1 1 0
                 0 1 1 0 1 0 0 1
-
-                i) Each row doubles
-                ii) Each row's first half is same as previous row.
-                iii) 2nd Half of each row is inverted of the previous row.
-
-                Thus, if we think of the recursion in terms of smaller input then, if k <= mid then k will remain same
-                else, it will be k - mid inverted
+            => Each row doubles
+            => Each rows 1st half is same as previous row.
+            => Each rows 2nd half is inverted of the previous row
         */
 
-        // Base Case
-        if (n == 1 && k == 1)
-            return 0;
+        // Approach 2 -- Math
+        int count = __builtin_popcount(k - 1);
+        return count % 2 == 0 ? 0 : 1;
 
-        int mid = pow(2, n - 1) / 2;
-        if (k <= mid)
-        {
-            return kthGrammar(n - 1, k);
-        }
-        else
-        {
-            return !kthGrammar(n - 1, k - mid);
-        }
+        /* Approach 1 -- Recursion
+        // Base Case
+        if (n == 1 && k == 1) return 0;
+
+        // int mid = pow(2, n - 1) / 2;
+        int mid = pow(2, n - 2);
+
+        if (k <= mid) return kthGrammar(n - 1, k);
+        else return 1 - kthGrammar(n - 1, k - mid);
+        */
     }
 };
 // @lc code=end
