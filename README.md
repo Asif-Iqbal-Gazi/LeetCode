@@ -53,7 +53,7 @@ Each folder:
 
 ```bash
 git clone https://github.com/Asif-Iqbal-Gazi/LeetCode.git
-cd leetcode-multilang
+cd LeetCode
 ```
 
 Navigate into any problem directory and run/compile in your language of choice.
