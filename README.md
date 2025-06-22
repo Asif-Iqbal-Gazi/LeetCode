@@ -52,7 +52,7 @@ Each folder:
 ## ⚙️ How to Use
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/leetcode-multilang.git
+git clone https://github.com/Asif-Iqbal-Gazi/LeetCode.git
 cd leetcode-multilang
 ```
 
