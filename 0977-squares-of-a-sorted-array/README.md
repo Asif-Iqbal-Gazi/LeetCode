@@ -46,12 +46,12 @@ This gives a linear time complexity of **O(n)**.
 
 ## 💻 Solutions
 
-| Language | File                      | Time Complexity | Space Complexity |
-|----------|---------------------------|------------------|------------------|
-| C        | [`977.c`](./977.c)        | O(n)             | O(n)             |
-| C++      | [`977.cpp`](./977.cpp)    | O(n)             | O(n)             |
-| Python   | [`977.py`](./977.py)      | O(n)             | O(n)             |
-| Rust     | [`977.rs`](./977.rs)      | O(n)             | O(n)             |
+| Language | File                   | Time Complexity | Space Complexity |
+| -------- | ---------------------- | --------------- | ---------------- |
+| C        | [`977.c`](./977.c)     | O(n)            | O(n)             |
+| C++      | [`977.cpp`](./977.cpp) | O(n)            | O(n)             |
+| Python   | [`977.py`](./977.py)   | O(n)            | O(n)             |
+| Rust     | [`977.rs`](./977.rs)   | O(n)            | O(n)             |
 
 ---
 
