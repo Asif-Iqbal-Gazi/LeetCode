@@ -7,21 +7,17 @@
 ___
 ## 🧠 Problem
 
-Given an integer array `nums` **sorted in non-decreasing order**, return an array of the **squares** of each number, also sorted in non-decreasing order.
+ProblemDescription
 
 ### ✳️ Examples
 
 **Example 1:**
 
-    Input: nums = [-4,-1,0,3,10]
-    Output: [0,1,9,16,100]
-    Explanation: After squaring, the array becomes [16,1,0,9,100].
-    After sorting, it becomes [0,1,9,16,100].
+Example1
 
 **Example 2:**
 
-    Input: nums = [-7,-3,2,3,11]
-    Output: [4,9,9,49,121]
+Example2
 
 ---
 ## 📌 Constraints
@@ -44,8 +40,8 @@ Space complexity: O(1)
 ## 💻 Solutions
 
 | Language | File                   | Time Complexity | Space Complexity |
-| -------- | ---------------------- | --------------- | ---------------- |
-| C        | [`977.c`](./977.c)     | O(n)            | O(n)             |
-| C++      | [`977.cpp`](./977.cpp) | O(n)            | O(n)             |
-| Python   | [`977.py`](./977.py)   | O(n)            | O(n)             |
-| Rust     | [`977.rs`](./977.rs)   | O(n)            | O(n)             |
+| -------- | ---------------------- | :-------------: | :--------------: |
+| C        | [`977.c`](./977.c)     |      O(n)       |       O(n)       |
+| C++      | [`977.cpp`](./977.cpp) |      O(n)       |       O(n)       |
+| Python   | [`977.py`](./977.py)   |      O(n)       |       O(n)       |
+| Rust     | [`977.rs`](./977.rs)   |      O(n)       |       O(n)       |
