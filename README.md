@@ -40,7 +40,7 @@ Each folder:
 |  27  | Remove Element                      | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](/0027-remove-element/)                      |
 | 977  | Squares of a Sorted Array           | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](/0977-squares-of-a-sorted-array/)           |
 | 1089 | Duplicate Zeros                     | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](/1098-duplicate-zeros/)                     |
-| 1346 | Check If N and Its Double Exist     | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](/1346-check-if-n-its-double-exist/)         |
+| 1346 | Check If N and Its Double Exist     | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](/1346-check-if-n-and-its-double-exist/)     |
 
 
 <!-- Add more rows here -->
