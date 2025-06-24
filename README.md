@@ -33,12 +33,12 @@ Each folder:
 
 ## ✅ Solved Problems
 
-| #    | Title                     | Difficulty | C   | C++ | Python | Rust | Folder Link                                     |
-| ---- | ------------------------- | ---------- | --- | --- | ------ | ---- | ----------------------------------------------- |
-| 001  | Two Sum                   | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](leetcode/0001-two-sum)                   |
-| 977  | Squares of a Sorted Array | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](leetcode/0977-squares-of-a-sorted-array) |
-| 1089 | Duplicate Zeros           | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](leetcode/1098-duplicate-zeros)           |
-|      |                           |            |     |     |        |      |                                                 |
+|  #   | Title                     | Difficulty | C   | C++ | Python | Rust | Folder Link                             |
+| :--: | ------------------------- | ---------- | --- | --- | ------ | ---- | --------------------------------------- |
+|  1   | Two Sum                   | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](/0001-two-sum)                   |
+|  27  | Remove Element            | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](/0027-remove-element)            |
+| 977  | Squares of a Sorted Array | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](/0977-squares-of-a-sorted-array) |
+| 1089 | Duplicate Zeros           | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](/1098-duplicate-zeros)           |
 
 <!-- Add more rows here -->
 
