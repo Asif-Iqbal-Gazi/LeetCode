@@ -53,9 +53,9 @@ Space complexity: O(1)
 
 ## 💻 Solutions
 
-| Language | File                  | Time Complexity | Space Complexity |
-| -------- | --------------------- | --------------- | ---------------- |
-| C        | [`27.c`](./977.c)     | O(n)            | O(1)             |
-| C++      | [`27.cpp`](./977.cpp) | O(n)            | O(1)             |
-| Python   | [`27.py`](./977.py)   | O(n)            | O(1)             |
-| Rust     | [`27.rs`](./977.rs)   | O(n)            | O(1)             |
+| Language | File                 | Time Complexity | Space Complexity |
+| -------- | -------------------- | --------------- | ---------------- |
+| C        | [`27.c`](./27.c)     | O(n)            | O(1)             |
+| C++      | [`27.cpp`](./27.cpp) | O(n)            | O(1)             |
+| Python   | [`27.py`](./27.py)   | O(n)            | O(1)             |
+| Rust     | [`27.rs`](./27.rs)   | O(n)            | O(1)             |

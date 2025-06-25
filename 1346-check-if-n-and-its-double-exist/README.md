@@ -47,10 +47,10 @@ Space complexity: O(n)
 
 ## 💻 Solutions
 
-| Language | File                  | Time Complexity | Space Complexity |
-| :------- | --------------------- | --------------- | ---------------- |
-| C        | [`1346.c`](./977.c)   | O(n)            | O(n)             |
-| C++      | ❌                     | ❌               | ❌                |
-| Python   | [`1346.py`](./977.py) | O(n)            | O(n)             |
-| Rust     | [`1346.rs`](./977.rs) | O(n)            | O(n)             |
-|          |                       |                 |                  |
+| Language | File                     | Time Complexity | Space Complexity |
+| :------- | ------------------------ | --------------- | ---------------- |
+| C        | [`1346.c`](./1346.c)     | ❌               | ❌                |
+| C++      | [`1346.cpp`](./1346.cpp) | O(n)            | O(n)             |
+| Python   | [`1346.py`](./1346.py)   | O(n)            | O(n)             |
+| Rust     | [`1346.rs`](./1346.rs)   | O(n)            | O(n)             |
+|          |                          |                 |                  |

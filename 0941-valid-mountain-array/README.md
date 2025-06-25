@@ -58,7 +58,7 @@ Space complexity: O(1)
 
 | Language | File                   | Time Complexity | Space Complexity |
 | -------- | ---------------------- | :-------------: | :--------------: |
-| C        | [`941.c`](./977.c)     |      O(n)       |       O(1)       |
-| C++      | [`941.cpp`](./977.cpp) |      O(n)       |       O(1)       |
-| Python   | [`941.py`](./977.py)   |      O(n)       |       O(1)       |
-| Rust     | [`941.rs`](./977.rs)   |      O(n)       |       O(1)       |
+| C        | [`941.c`](./941.c)     |      O(n)       |       O(1)       |
+| C++      | [`941.cpp`](./941.cpp) |      O(n)       |       O(1)       |
+| Python   | [`941.py`](./941.py)   |      O(n)       |       O(1)       |
+| Rust     | [`941.rs`](./941.rs)   |      O(n)       |       O(1)       |
