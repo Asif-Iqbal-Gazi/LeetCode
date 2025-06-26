@@ -2,7 +2,7 @@
 
 ---
 **Difficulty:** Easy
-**Tags:** Two Pointers, Array, Sorting
+**Tags:** Array, Sorting, Two Pointer
 **Company:** 
 ___
 ## 🧠 Problem
