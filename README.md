@@ -40,7 +40,8 @@ Each folder:
 |  27  | Remove Element                                       | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0027-remove-element/)                                      |
 | 283  | Move Zeros                                           | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0283-move-zeros/)                                          |
 | 414  | Third Maximum Number                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0414-third-maximum-number/)                                |
-| 485  | Max Consecutive Ones                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0485-max-consecutive-ones/)                                |
+| 448  | Find All Numbers Disappeared in an Array             | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0485-max-consecutive-ones/)                                |
+| 485  | Max Consecutive Ones                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0441-find-all-numbers-disappeared-in-an-array/)            |
 | 487  | Max Consecutive Ones II                              | Medium     | ✅   | ✅   | ✅      | ✅    | [Link](./0487-max-consecutive-ones-ii/)                             |
 | 941  | Valid Mountain Array                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0941-valid-mountain-array/)                                |
 | 977  | Squares of a Sorted Array                            | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0977-squares-of-a-sorted-array/)                           |

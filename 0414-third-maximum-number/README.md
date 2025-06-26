@@ -1,4 +1,4 @@
-# 977. Squares of Sorted Array
+# 414. Third Maximum Number
 
 ---
 **Difficulty:** Easy
