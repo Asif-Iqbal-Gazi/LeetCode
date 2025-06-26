@@ -39,6 +39,7 @@ Each folder:
 |  26  | Remove Duplicates from Sorted Array                  | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0026-remove-duplicates-from-sorted-array/)                 |
 |  27  | Remove Element                                       | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0027-remove-element/)                                      |
 | 283  | Move Zeros                                           | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0283-move-zeros/)                                          |
+| 485  | Max Consecutive Ones                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0485-max-consecutive-ones/)                                |
 | 905  | Sort Array By Parity                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0905-sort-array-by-parity/)                                |
 | 941  | Valid Mountain Array                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0941-valid-mountain-array/)                                |
 | 977  | Squares of a Sorted Array                            | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0977-squares-of-a-sorted-array/)                           |
