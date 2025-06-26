@@ -28,7 +28,7 @@ BraceWrapping:
 
 # --- Line Breaking & Short Statements ---
 ColumnLimit: 100
-AllowShortIfStatementsOnASingleLine: true # if (condition) return;
+AllowShortIfStatementsOnASingleLine: false # if (condition) return;
 AllowShortLoopsOnASingleLine: true        # for (int i=0; i<N; ++i) do_something();
 AllowShortFunctionsOnASingleLine: Inline  # void func() { return; } (for very short functions)
 BreakBeforeBinaryOperators: None          # Keep operators with their right operand (e.g., a + b)

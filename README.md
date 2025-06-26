@@ -40,13 +40,14 @@ Each folder:
 |  27  | Remove Element                                       | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0027-remove-element/)                                      |
 | 283  | Move Zeros                                           | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0283-move-zeros/)                                          |
 | 485  | Max Consecutive Ones                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0485-max-consecutive-ones/)                                |
-| 905  | Sort Array By Parity                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0905-sort-array-by-parity/)                                |
+| 485  | Max Consecutive Ones II                              | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0487-max-consecutive-ones-ii/)                             |
 | 941  | Valid Mountain Array                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0941-valid-mountain-array/)                                |
 | 977  | Squares of a Sorted Array                            | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0977-squares-of-a-sorted-array/)                           |
 | 1051 | Height Checker                                       | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./1051-height-checker/)                                      |
 | 1089 | Duplicate Zeros                                      | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./1098-duplicate-zeros/)                                     |
 | 1299 | Replace Elements with Greatest Element on Right Side | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./299-replace-elements-with-greatest-element-on-right-side/) |
 | 1346 | Check If N and Its Double Exist                      | Easy       | ❌   | ✅   | ✅      | ✅    | [Link](./1346-check-if-n-and-its-double-exist/)                     |
+|      |                                                      |            |     |     |        |      |                                                                     |
 
 
 <!-- Add more rows here -->
