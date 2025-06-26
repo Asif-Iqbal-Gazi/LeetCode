@@ -25,7 +25,7 @@ Given a binary array `nums`, return _the maximum number of consecutive_ `1`_'
 ---
 ## 📌 Constraints
 
-- `1 <= nums.length <= 105`
+- `1 <= nums.length <= 10^5`
 - `nums[i]` is either `0` or `1`.
 
 
