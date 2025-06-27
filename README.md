@@ -44,6 +44,7 @@ Each folder:
 | 485  | Max Consecutive Ones                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0441-find-all-numbers-disappeared-in-an-array/)            |
 | 487  | Max Consecutive Ones II                              | Medium     | ✅   | ✅   | ✅      | ✅    | [Link](./0487-max-consecutive-ones-ii/)                             |
 | 724  | Find Pivot Index                                     | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0724-find-pivot-index/)                                    |
+| 747  | Largest Number At Least Twice of Others              | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0747-largest-number-at-least-twice-of-others/)             |
 | 941  | Valid Mountain Array                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0941-valid-mountain-array/)                                |
 | 977  | Squares of a Sorted Array                            | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0977-squares-of-a-sorted-array/)                           |
 | 1051 | Height Checker                                       | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./1051-height-checker/)                                      |
