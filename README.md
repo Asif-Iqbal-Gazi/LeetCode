@@ -38,6 +38,7 @@ Each folder:
 |  1   | Two Sum                                              | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0001-two-sum/)                                             |
 |  26  | Remove Duplicates from Sorted Array                  | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0026-remove-duplicates-from-sorted-array/)                 |
 |  27  | Remove Element                                       | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0027-remove-element/)                                      |
+|  54  | Spiral Matrix                                        | Medium     | ✅   | ✅   | ✅      | ✅    | [Link](./0054-spiral-matrix/)                                       |
 |  66  | Plus One                                             | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0066-plus-one/)                                            |
 | 283  | Move Zeros                                           | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0283-move-zeros/)                                          |
 | 414  | Third Maximum Number                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0414-third-maximum-number/)                                |
