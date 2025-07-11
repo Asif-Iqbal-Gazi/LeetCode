@@ -45,6 +45,7 @@ Each folder:
 |  67  | Add Binary                                           | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0067-add-binary/)                                          |
 | 118  | Pascal's Triangle                                    | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0118-pascal-triangle/)                                     |
 | 283  | Move Zeros                                           | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0283-move-zeros/)                                          |
+| 344  | Reverse String                                       | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0344-reverse-string/)                                      |
 | 414  | Third Maximum Number                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0414-third-maximum-number/)                                |
 | 448  | Find All Numbers Disappeared in an Array             | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0485-max-consecutive-ones/)                                |
 | 485  | Max Consecutive Ones                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0441-find-all-numbers-disappeared-in-an-array/)            |
