@@ -44,6 +44,7 @@ Each folder:
 |  66  | Plus One                                             | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0066-plus-one/)                                            |
 |  67  | Add Binary                                           | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0067-add-binary/)                                          |
 | 118  | Pascal's Triangle                                    | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0118-pascal-triangle/)                                     |
+| 167  | Two Sum II - Input Array Is Sorted                   | Medium     | ✅   | ✅   | ✅      | ✅    | [Link](./0167-two-sum-ii-input-array-is-sorted/)                    |
 | 283  | Move Zeros                                           | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0283-move-zeros/)                                          |
 | 344  | Reverse String                                       | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0344-reverse-string/)                                      |
 | 414  | Third Maximum Number                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0414-third-maximum-number/)                                |
