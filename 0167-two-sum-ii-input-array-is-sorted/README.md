@@ -1,4 +1,4 @@
-# 977. Squares of Sorted Array
+# 167. Two Sum II - Input Is Sorted
 
 ---
 **Difficulty:** Medium
@@ -38,7 +38,7 @@ Your solution must use only constant extra space.
 ---
 ## 📌 Constraints
 
-- `2 <= numbers.length <= 3 * 104`
+- `2 <= numbers.length <= 3 * 10^4`
 - `-1000 <= numbers[i] <= 1000`
 - `numbers` is sorted in **non-decreasing order**.
 - `-1000 <= target <= 1000`
