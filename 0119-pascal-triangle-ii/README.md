@@ -16,18 +16,23 @@ In **Pascal's triangle**, each number is the sum of the two numbers directly ab
 
 **Example 1:**
 
-Example1
+	**Input:** rowIndex = 3
+	**Output:** [1,3,3,1]
 
 **Example 2:**
 
-Example2
+	**Input:** rowIndex = 0
+	**Output:** [1]
+
+**Example 3:**
+
+	**Input:** rowIndex = 1
+	**Output:** [1,1]
 
 ---
 ## 📌 Constraints
 
-- `1 <= nums.length <= 10^4`
-- `-10^4 <= nums[i] <= 10^4`
-- `nums` is sorted in **non-decreasing order**
+- `0 <= rowIndex <= 33`
 
 ---
 
