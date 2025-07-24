@@ -37,6 +37,7 @@ Each folder:
 | :--: | :--------------------------------------------------- | ---------- | --- | --- | ------ | ---- | ------------------------------------------------------------------- |
 |  1   | Two Sum                                              | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0001-two-sum/)                                             |
 |  14  | Longest Common Prefix                                | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0014-longest-common-prefix/)                               |
+|  24  | Swap Nodes in Pairs                                  | Medium     | ✅   | ✅   | ✅      | ✅    | [Link](./0024-swap-nodes-in-pairs/)                                 |
 |  26  | Remove Duplicates from Sorted Array                  | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0026-remove-duplicates-from-sorted-array/)                 |
 |  27  | Remove Element                                       | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0027-remove-element/)                                      |
 |  28  | Find the Index of the First Occurrence in a String   | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0028-find-the-index-of-first-occurrence-in-a-string/)      |
