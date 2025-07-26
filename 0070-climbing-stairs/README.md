@@ -46,8 +46,8 @@ Each time you can either climb `1` or `2` steps. In how many distinct ways c
 
 ## 💻 Solutions
 
-| Language | File                   | Time Complexity | Space Complexity |
-| -------- | ---------------------- | :-------------: | :--------------: |
+| Language | File                 | Time Complexity | Space Complexity |
+| -------- | -------------------- | :-------------: | :--------------: |
 | C        | [`70.c`](./70.c)     |      O(n)       |       O(1)       |
 | C++      | [`70.cpp`](./70.cpp) |      O(n)       |       O(1)       |
 | Python   | [`70.py`](./70.py)   |      O(n)       |       O(1)       |
