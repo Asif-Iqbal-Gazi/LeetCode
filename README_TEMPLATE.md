@@ -30,10 +30,7 @@ Example2
 
 ## 🚀 Approach
 
-Use the **two-pointer technique**
-
-Time Complexity: O(n)
-Space complexity: O(1)
+1. **Recursion** -- T.C: O(N), S.C: O(N)
 
 ---
 
