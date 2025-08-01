@@ -65,6 +65,7 @@ Each folder:
 | 557  | Reverse Words in a String III                        | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0557-reverse-words-in-a-string-iii/)                       |
 | 724  | Find Pivot Index                                     | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0724-find-pivot-index/)                                    |
 | 747  | Largest Number At Least Twice of Others              | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0747-largest-number-at-least-twice-of-others/)             |
+| 779  | K-th Symbol in Grammar                               | Medium     | ✅   | ✅   | ✅      | ✅    | [Link](./0779-k-th-symbol-in-grammar/)                              |
 | 941  | Valid Mountain Array                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0941-valid-mountain-array/)                                |
 | 977  | Squares of a Sorted Array                            | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0977-squares-of-a-sorted-array/)                           |
 | 1051 | Height Checker                                       | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./1051-height-checker/)                                      |
