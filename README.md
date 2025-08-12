@@ -47,6 +47,7 @@ Each folder:
 |  66  | Plus One                                             | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0066-plus-one/)                                            |
 |  67  | Add Binary                                           | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0067-add-binary/)                                          |
 |  70  | Climbing Stairs                                      | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0070-climbing-stairs/)                                     |
+|  95  | Unique Binary Search Trees II                        | Medium     | ✅   | ✅   | ✅      | ✅    | [Link](./0095-unique-binary-search-trees-ii/)                       |
 | 104  | Maximum Depth of Binary Tree                         | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0104-maximum-depth-of-binary-tree/)                        |
 | 118  | Pascal's Triangle                                    | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0118-pascal-triangle/)                                     |
 | 119  | Pascal's Triangle II                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0119-pascal-triangle/)                                     |
