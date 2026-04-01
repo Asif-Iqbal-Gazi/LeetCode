@@ -59,7 +59,7 @@ Each folder:
 | 344  | Reverse String                                       | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0344-reverse-string/)                                      |
 | 414  | Third Maximum Number                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0414-third-maximum-number/)                                |
 | 448  | Find All Numbers Disappeared in an Array             | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0485-max-consecutive-ones/)                                |
-| 485  | Max Consecutive Ones                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0441-find-all-numbers-disappeared-in-an-array/)            |
+| 485  | Max Consecutive Ones                                 | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0485-max-consecutive-ones/)                                |
 | 487  | Max Consecutive Ones II                              | Medium     | ✅   | ✅   | ✅      | ✅    | [Link](./0487-max-consecutive-ones-ii/)                             |
 | 498  | Diagonal Traverse                                    | Medium     | ✅   | ✅   | ✅      | ✅    | [Link](./0498-diagonal-traverse/)                                   |
 | 509  | Fibonacci Number                                     | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./0509-fibonacci-number/)                                    |
