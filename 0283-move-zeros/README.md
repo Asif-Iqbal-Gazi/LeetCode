@@ -1,16 +1,18 @@
 # 283. Move Zeros
 
 ---
-**Difficulty:** Easy
-**Tags:** Array, Two Pointers
-**Company:** Google, Microsoft, Amazon, Meta
-___
+
+- **Difficulty:** Easy
+- **Tags:** Array, Two Pointers
+- **Company:** Google, Microsoft, Amazon, Meta
+
+---
+
 ## 🧠 Problem
 
 Given an integer array `nums`, move all `0`'s to the end of it while maintaining the relative order of the non-zero elements.
 
 `Note` that you must do this in-place without making a copy of the array.
-
 
 ### ✳️ Examples
 
@@ -25,6 +27,7 @@ Given an integer array `nums`, move all `0`'s to the end of it while maintaining
     Output: [0]
 
 ---
+
 ## 📌 Constraints
 
 - `1 <= nums.length <= 10^4`
