@@ -1,9 +1,9 @@
 # 485. Max Consecutive Ones
 
 ---
-**Difficulty:** Easy
-**Tags:** Array
-**Company:** Google, Microsoft, Amazon, Meta
+- **Difficulty:** Easy
+- **Tags:** Array
+- **Company:** Google, Microsoft, Amazon, Meta
 ___
 ## 🧠 Problem
 
