@@ -6,4 +6,3 @@ class Solution:
                 nums[index] *= -1
 
         return [i + 1 for i, num in enumerate(nums) if num > 0]
-
