@@ -14,11 +14,11 @@ ProblemDescription
 
 **Example 1:**
 
-> Example1
+- Example1
 
 **Example 2:**
 
-> Example2
+- Example2
 
 ---
 ## 📌 Constraints
