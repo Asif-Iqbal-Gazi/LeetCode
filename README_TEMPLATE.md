@@ -4,7 +4,8 @@
 - **Difficulty:** Easy
 - **Tags:** Array, Sorting, Two Pointer
 - **Company:** 
-___
+---
+
 ## 🧠 Problem
 
 ProblemDescription
@@ -13,11 +14,11 @@ ProblemDescription
 
 **Example 1:**
 
-Example1
+> Example1
 
 **Example 2:**
 
-Example2
+> Example2
 
 ---
 ## 📌 Constraints
