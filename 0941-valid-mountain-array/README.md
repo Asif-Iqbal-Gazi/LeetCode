@@ -1,10 +1,13 @@
 # 941. Valid Mountain Array
 
 ---
-**Difficulty:** Easy
-**Tags:**  Array
-**Company:** Meta, Amazon, Google, Microsoft
-___
+
+- **Difficulty:** Easy
+- **Tags:** Array, Weekly Contest 111, Mid Level
+- **Company:** Google, Meta, Microsoft, Amazon, TikTok
+
+---
+
 ## 🧠 Problem
 
 Given an array of integers `arr`, return `true` if and only if it is a valid mountain array.
@@ -13,8 +16,8 @@ Recall that `arr` is a mountain array if and only if:
 
 - `arr.length >= 3`
 - There exists some `i` with `0 < i < arr.length - 1` such that:
-	- `arr[0] < arr[1] < ... < arr[i - 1] < arr[i] `
-	- `arr[i] > arr[i + 1] > ... > arr[arr.length - 1]`
+  - `arr[0] < arr[1] < ... < arr[i - 1] < arr[i] `
+  - `arr[i] > arr[i + 1] > ... > arr[arr.length - 1]`
 
 ### ✳️ Examples
 
@@ -22,7 +25,6 @@ Recall that `arr` is a mountain array if and only if:
 
     Input: arr = [2,1]
     Output: false
-
 
 **Example 2:**
 
@@ -35,6 +37,7 @@ Recall that `arr` is a mountain array if and only if:
     Output: true
 
 ---
+
 ## 📌 Constraints
 
 - `1 <= arr.length <= 10^4`
@@ -45,6 +48,7 @@ Recall that `arr` is a mountain array if and only if:
 ## 🚀 Approach
 
 Use the **two-pointer technique**
+
 - Starting from beginning check if we are monotonically increasing, break otherwise
 - Starting from end check if we are monotonically decreasing, break otherwise
 - Finally check the index to verify if we are at the peak
