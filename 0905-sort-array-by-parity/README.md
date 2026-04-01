@@ -1,10 +1,13 @@
 # 905. Sort Array By Parity
 
 ---
-**Difficulty:** Easy
-**Tags:** Two Pointers, Array, Sorting
-**Company:** 
-___
+
+- **Difficulty:** Easy
+- **Tags:** Two Pointers, Array, Sorting, Weekly Contest 102, Junior
+- **Company:** Google, Meta, Amazon, Bloomberg, Microsoft
+
+---
+
 ## 🧠 Problem
 
 Given an integer array `nums`, move all the even integers at the beginning of the array followed by all the odd integers.
@@ -25,6 +28,7 @@ Return `any array` that satisfies this condition.
     Output: [0]
 
 ---
+
 ## 📌 Constraints
 
 - `1 <= nums.length <= 5000`
