@@ -6,4 +6,3 @@ class Solution:
                 nums[pos] = nums[i]
                 pos += 1
         return pos
-        

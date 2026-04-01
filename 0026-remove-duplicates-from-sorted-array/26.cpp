@@ -6,26 +6,27 @@
 
 // @lc code=start
 const static auto fast = [] {
-  ios_base::sync_with_stdio(false);
-  cin.tie(nullptr);
-  cout.tie(nullptr);
-  return 0;
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return 0;
 }();
 
 class Solution {
-public:
-  int removeDuplicates(vector<int>& nums) {
-    /** Approach: Two Pointers
-     */
-    int l   = 1;
-    int pos = 1;
-    int n   = nums.size();
+  public:
+    int removeDuplicates(vector<int>& nums) {
+        /** Approach: Two Pointers
+         */
+        int l   = 1;
+        int pos = 1;
+        int n   = nums.size();
 
-    while (l < n) {
-      if (nums[l] != nums[pos - 1]) nums[pos++] = nums[l];
-      l++;
+        while (l < n) {
+            if (nums[l] != nums[pos - 1])
+                nums[pos++] = nums[l];
+            l++;
+        }
+        return pos;
     }
-    return pos;
-  }
 };
 // @lc code=end
