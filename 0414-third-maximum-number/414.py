@@ -1,6 +1,6 @@
 class Solution:
     def thirdMax(self, nums: list[int]) -> int:
-        first = second = third = float('-inf')
+        first = second = third = float("-inf")
 
         for num in nums:
             if num in (first, second, third):
@@ -16,5 +16,4 @@ class Solution:
             elif num > third:
                 third = num
 
-        return first if third == float('-inf') else third
-
+        return first if third == float("-inf") else third
