@@ -1,10 +1,13 @@
 # 1299. Replace Elements with Greatest Element on Right Side
 
 ---
-**Difficulty:** Easy
-**Tags:** Array
-**Company:** Google, Amazon, Meta
-___
+
+- **Difficulty:** Easy
+- **Tags:** Array, Biweekly Contest 16, Mid Level
+- **Company:** Google, Amazon, Meta
+
+---
+
 ## 🧠 Problem
 
 Given an array `arr`, replace every element in that array with the greatest element among the elements to its right, and replace the last element with `-1`.
@@ -17,7 +20,7 @@ After doing so, return the array.
 
     Input: arr = [17,18,5,4,6,1]
     Output: [18,6,6,6,1,-1]
-    Explanation: 
+    Explanation:
     - index 0 --> the greatest element to the right of index 0 is index 1 (18).
     - index 1 --> the greatest element to the right of index 1 is index 4 (6).
     - index 2 --> the greatest element to the right of index 2 is index 4 (6).
@@ -32,6 +35,7 @@ After doing so, return the array.
     Explanation: There are no elements to the right of index 0.
 
 ---
+
 ## 📌 Constraints
 
 - `1 <= arr.length <= 10^4`

@@ -7,7 +7,7 @@ impl Solution {
         for i in (0..res.len()).rev() {
             curr = res[i];
             res[i] = right_max;
-             if curr > right_max {
+            if curr > right_max {
                 right_max = curr;
             }
         }
