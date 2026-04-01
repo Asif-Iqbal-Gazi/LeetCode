@@ -1,35 +1,39 @@
 # 487. Max Consecutive Ones II
 
 ---
-**Difficulty:** Medium
-**Tags:** Array, Sliding Window, Dynamic Programming
-**Company:** Meta, Google
-___
+
+- **Difficulty:** Medium
+- **Tags:** Array, Sliding Window, Dynamic Programming, Senior Staff
+- **Company:** Meta, Google
+
+---
+
 ## 🧠 Problem
 
-Given a binary array `nums`, return _the maximum number of consecutive_ `1`_'s in the array if you can flip at most one_ `0`.
+Given a binary array `nums`, return *the maximum number of consecutive* `1`*'s in the array if you can flip at most one* `0`.
 
 ### ✳️ Examples
 
 **Example 1:**
 
-	**Input:** nums = [1,0,1,1,0]
-	**Output:** 4
-	**Explanation:** 
-	- If we flip the first zero, nums becomes [1,1,1,1,0] and we have 4 consecutive ones.
-	- If we flip the second zero, nums becomes [1,0,1,1,1] and we have 3 consecutive ones.
-	The max number of consecutive ones is 4.
+    **Input:** nums = [1,0,1,1,0]
+    **Output:** 4
+    **Explanation:**
+    - If we flip the first zero, nums becomes [1,1,1,1,0] and we have 4 consecutive ones.
+    - If we flip the second zero, nums becomes [1,0,1,1,1] and we have 3 consecutive ones.
+    The max number of consecutive ones is 4.
 
 **Example 2:**
 
-	**Input:** nums = [1,0,1,1,0,1]
-	**Output:** 4
-	**Explanation:** 
-	- If we flip the first zero, nums becomes [1,1,1,1,0,1] and we have 4 consecutive ones.
-	- If we flip the second zero, nums becomes [1,0,1,1,1,1] and we have 4 consecutive ones.
-	The max number of consecutive ones is 4.
+    **Input:** nums = [1,0,1,1,0,1]
+    **Output:** 4
+    **Explanation:**
+    - If we flip the first zero, nums becomes [1,1,1,1,0,1] and we have 4 consecutive ones.
+    - If we flip the second zero, nums becomes [1,0,1,1,1,1] and we have 4 consecutive ones.
+    The max number of consecutive ones is 4.
 
 ---
+
 ## 📌 Constraints
 
 - `1 <= nums.length <= 10^5`
@@ -40,8 +44,9 @@ Given a binary array `nums`, return _the maximum number of consecutive_ `1`_'
 ## 🚀 Approach
 
 Use the **sliding window** technique.
- - Expand the window by moving right; if there are more than one zero, move left forward.
-   The final window will be the longest with at most one zero.
+
+- Expand the window by moving right; if there are more than one zero, move left forward.
+  The final window will be the longest with at most one zero.
 
 Time Complexity: O(n)
 Space complexity: O(1)
