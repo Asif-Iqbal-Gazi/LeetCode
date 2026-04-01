@@ -75,7 +75,7 @@ Each folder:
 | 1089 | Duplicate Zeros                                                                                                   | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./1089-duplicate-zeros/)                                     |
 | 1295 | [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./1295-find-numbers-with-even-nubmers-of-digits)             |
 | 1299 | Replace Elements with Greatest Element on Right Side                                                              | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./299-replace-elements-with-greatest-element-on-right-side/) |
-| 1346 | Check If N and Its Double Exist                                                                                   | Easy       | ❌   | ✅   | ✅      | ✅    | [Link](./1346-check-if-n-and-its-double-exist/)                     |
+| 1346 | Check If N and Its Double Exist                                                                                   | Easy       | ✅   | ✅   | ✅      | ✅    | [Link](./1346-check-if-n-and-its-double-exist/)                     |
 
 <!-- Add more rows here -->
 
