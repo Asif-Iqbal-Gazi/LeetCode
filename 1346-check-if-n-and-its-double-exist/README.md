@@ -1,10 +1,13 @@
 # 1346. Check If N and Its Double Exist
 
 ---
-**Difficulty:** Easy
-**Tags:** Two Pointers, Array, Sorting, Binary Search, Hash Table
-**Company:** Google, Amazon, Bloomberg, Meta, Microsoft
-___
+
+- **Difficulty:** Easy
+- **Tags:** Two Pointers, Array, Sorting, Binary Search, Hash Table
+- **Company:** Google, Amazon, Bloomberg, Meta, Microsoft
+
+---
+
 ## 🧠 Problem
 
 Given an array `arr` of integers, check if there exist two indices `i` and `j` such that :
@@ -12,7 +15,6 @@ Given an array `arr` of integers, check if there exist two indices `i` and `j` s
 - `i != j`
 - `0 <= i, j < arr.length`
 - `arr[i] == 2 * arr[j]`
- 
 
 ### ✳️ Examples
 
@@ -29,6 +31,7 @@ Given an array `arr` of integers, check if there exist two indices `i` and `j` s
     Explanation: There is no i and j that satisfy the conditions.
 
 ---
+
 ## 📌 constraints
 
 - `2 <= arr.length <= 500`
@@ -49,8 +52,7 @@ Space complexity: O(n)
 
 | Language | File                     | Time Complexity | Space Complexity |
 | :------- | ------------------------ | --------------- | ---------------- |
-| C        | [`1346.c`](./1346.c)     | ❌               | ❌                |
+| C        | [`1346.c`](./1346.c)     | O(n)            | O(1)             |
 | C++      | [`1346.cpp`](./1346.cpp) | O(n)            | O(n)             |
 | Python   | [`1346.py`](./1346.py)   | O(n)            | O(n)             |
 | Rust     | [`1346.rs`](./1346.rs)   | O(n)            | O(n)             |
-|          |                          |                 |                  |
