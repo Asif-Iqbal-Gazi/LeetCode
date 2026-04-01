@@ -1,10 +1,13 @@
 # 27. Remove Element
 
 ---
-**Difficulty:** Easy
-**Tags:** Two Pointers, Array
-**Company:** Google, Amazon, Meta, Microsoft
-___
+
+- **Difficulty:** Easy
+- **Tags:** Two Pointers, Array
+- **Company:** Google, Amazon, Meta, Microsoft
+
+---
+
 ## 🧠 Problem
 
 Given an integer array `nums` and an integer `val`, remove all occurrences of `val` in `nums` in-place. The order of the elements may be changed. Then return the number of elements in `nums` which are not equal to `val`.
@@ -12,11 +15,9 @@ Given an integer array `nums` and an integer `val`, remove all occurrences of `v
 - Consider the number of elements in `nums` which are not equal to `val` be `k`, to get accepted, you need to do the following things:
 
 - Change the array `nums` such that the first `k` elements of `nums` contain the elements which are not equal to `val`. The remaining elements of `nums` are not important as well as the size of `nums`.
-Return `k`.
+  Return `k`.
 
 ### ✳️ Examples
-
-
 
 **Example 1:**
 
@@ -34,6 +35,7 @@ Return `k`.
     It does not matter what you leave beyond the returned k (hence they are underscores).
 
 ---
+
 ## 📌 Constraints
 
 - `1 <= nums.length <= 100`
