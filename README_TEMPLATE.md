@@ -1,9 +1,9 @@
 # 977. Squares of Sorted Array
 
 ---
-**Difficulty:** Easy
-**Tags:** Array, Sorting, Two Pointer
-**Company:** 
+- **Difficulty:** Easy
+- **Tags:** Array, Sorting, Two Pointer
+- **Company:** 
 ___
 ## 🧠 Problem
 
