@@ -1,10 +1,13 @@
 # 977. Squares of Sorted Array
 
 ---
-**Difficulty:** Easy
-**Tags:** Two Pointers, Array, Sorting
-**Company:** Meta, Uber, Google, Amazon, Microsoft, Apple
-___
+
+- **Difficulty:** Easy
+- **Tags:** Two Pointers, Array, Sorting, Weekly Contest 120, Junior
+- **Company:** Google, Amazon, Uber, Bloomberg, Meta, Microsoft, CrowdStrike
+
+---
+
 ## 🧠 Problem
 
 Given an integer array `nums` **sorted in non-decreasing order**, return an array of the **squares** of each number, also sorted in non-decreasing order.
@@ -24,6 +27,7 @@ Given an integer array `nums` **sorted in non-decreasing order**, return an arra
     Output: [4,9,9,49,121]
 
 ---
+
 ## 📌 Constraints
 
 - `1 <= nums.length <= 10^4`
