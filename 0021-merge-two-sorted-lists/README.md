@@ -1,38 +1,42 @@
 # 21. Merge Two Sorted Lists
 
 ---
-**Difficulty:** Easy
-**Tags:** Linked List, Recursion
-**Company:** Google, Amazon, Meta, Microsoft, Apple
-___
+
+- **Difficulty:** Easy
+- **Tags:** Linked List, Recursion
+- **Company:** Google, Amazon, Meta, Microsoft, Apple
+
+---
+
 ## 🧠 Problem
 
 You are given the heads of two sorted linked lists `list1` and `list2`.
 
 Merge the two lists into one **sorted** list. The list should be made by splicing together the nodes of the first two lists.
 
-Return _the head of the merged linked list_.
+Return *the head of the merged linked list*.
 
 ### ✳️ Examples
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg)
+![Example 1](https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg)
 
-	**Input:** list1 = [1,2,4], list2 = [1,3,4]
-	**Output:** [1,1,2,3,4,4]
+    **Input:** list1 = [1,2,4], list2 = [1,3,4]
+    **Output:** [1,1,2,3,4,4]
 
 **Example 2:**
 
-	**Input:** list1 = [], list2 = []
-	**Output:** []
+    **Input:** list1 = [], list2 = []
+    **Output:** []
 
 **Example 3:**
 
-	**Input:** list1 = [], list2 = [0]
-	**Output:** [0]
+    **Input:** list1 = [], list2 = [0]
+    **Output:** [0]
 
 ---
+
 ## 📌 Constraints
 
 - The number of nodes in both lists is in the range `[0, 50]`.
@@ -44,7 +48,7 @@ Return _the head of the merged linked list_.
 ## 🚀 Approach
 
 1. **Recursion** -- T.C: O(M + N), S.C: O(max(M, N))
-3. **Iterative** -- T.C: O(M + N), S.C: O(1)
+2. **Iterative** -- T.C: O(M + N), S.C: O(1)
 
 ---
 
