@@ -26,7 +26,7 @@ class Solution:
         #     and self.isSameTree(p.right, q.right)
         # )
 
-        # Approach 2 -- Iterative DFS
+        # Approach 2 -- Iterative BFS
         from collections import deque
 
         dq = deque([(p, q)])
