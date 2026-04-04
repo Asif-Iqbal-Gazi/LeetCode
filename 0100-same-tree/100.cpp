@@ -49,7 +49,7 @@ class Solution {
                 continue;
             if (!node1 || !node2)
                 return false;
-            if (node1->val != node2.val)
+            if (node1->val != node2->val)
                 return false;
             pQueue.push(node1->left);
             qQueue.push(node2->left);
