@@ -32,7 +32,7 @@ Given an array `arr` of integers, check if there exist two indices `i` and `j` s
 
 ---
 
-## 📌 constraints
+## 📌 Constraints
 
 - `2 <= arr.length <= 500`
 - `-10^3 <= nums[i] <= 10^3`
