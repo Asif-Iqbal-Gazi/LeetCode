@@ -1,13 +1,16 @@
 # 485. Max Consecutive Ones
 
 ---
+
 - **Difficulty:** Easy
 - **Tags:** Array
 - **Company:** Google, Microsoft, Amazon, Meta
+
 ---
+
 ## 🧠 Problem
 
-Given a binary array `nums`, return _the maximum number of consecutive_ `1`_'s in the array_.
+Given a binary array `nums`, return *the maximum number of consecutive* `1`_'s in the array_.
 
 ### ✳️ Examples
 
@@ -23,18 +26,17 @@ Given a binary array `nums`, return _the maximum number of consecutive_ `1`_'
 - **Output:** `2`
 
 ---
+
 ## 📌 Constraints
 
 - `1 <= nums.length <= 10^5`
 - `nums[i]` is either `0` or `1`.
-
 
 ---
 
 ## 🚀 Approach
 
 Traverse array and count consecutive ones, resetting count on 0, tracking the maximum
-
 
 Time Complexity: O(n)
 Space complexity: O(1)
