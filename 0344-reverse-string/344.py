@@ -9,5 +9,3 @@ class Solution:
             s[i], s[j] = s[j], s[i]
             i += 1
             j -= 1
-
-
