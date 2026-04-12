@@ -1,17 +1,20 @@
 # 151. Reverse Words in a String
 
 ---
+
 **Difficulty:** Medium
 **Tags:** String, Two Pointer
 **Company:** Google, Amazon, Meta
-___
+
+---
+
 ## 🧠 Problem
 
 Given an input string `s`, reverse the order of the **words**.
 
 A **word** is defined as a sequence of non-space characters. The **words** in `s` will be separated by at least one space.
 
-Return _a string of the words in reverse order concatenated by a single space._
+Return *a string of the words in reverse order concatenated by a single space.*
 
 **Note** that `s` may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.
 
@@ -19,22 +22,23 @@ Return _a string of the words in reverse order concatenated by a single space._
 
 **Example 1:**
 
-	**Input:** s = "the sky is blue"
-	**Output:** "blue is sky the"
+    **Input:** s = "the sky is blue"
+    **Output:** "blue is sky the"
 
 **Example 2:**
 
-	**Input:** s = "  hello world  "
-	**Output:** "world hello"
-	**Explanation:** Your reversed string should not contain leading or trailing spaces.
+    **Input:** s = "  hello world  "
+    **Output:** "world hello"
+    **Explanation:** Your reversed string should not contain leading or trailing spaces.
 
 **Example 3:**
 
-	**Input:** s = "a good   example"
-	**Output:** "example good a"
-	**Explanation:** You need to reduce multiple spaces between two words to a single space in the reversed string.
+    **Input:** s = "a good   example"
+    **Output:** "example good a"
+    **Explanation:** You need to reduce multiple spaces between two words to a single space in the reversed string.
 
 ---
+
 ## 📌 Constraints
 
 - `1 <= s.length <= 10^4`
@@ -46,9 +50,9 @@ Return _a string of the words in reverse order concatenated by a single space._
 ## 🚀 Approach
 
 1. [Linear Scan] -- T.C: O(N), S.C: O(1)
-    - Remove extra spaces (leading, trailing, and in-between)
-    - Reverse each word in place.
-    - Reverse the whole string to get final order.
+   - Remove extra spaces (leading, trailing, and in-between)
+   - Reverse each word in place.
+   - Reverse the whole string to get final order.
 
 ---
 
