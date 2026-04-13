@@ -1,11 +1,20 @@
 BasedOnStyle: LLVM
 
 # --- Indentation ---
-IndentWidth: 4 # 2 is default for LLVM.
-TabWidth: 4 # Should match IndentWidth if UseTab is Never.
+IndentWidth: 4 # 2 is default for LLVM
+TabWidth: 4 # Should match IndentWidth if UseTab is Never
 UseTab: Never
-AlignConsecutiveAssignments: true # Align '=' signs
-AlignConsecutiveDeclarations: true # Align variable names in declarations
+
+# --- Alignment ---
+# Boolean form deprecated since clang-format 13; use struct form
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: false # Don't align across blank lines
+  AcrossComments: false # Don't align across comment lines
+AlignConsecutiveDeclarations:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
 
 # --- Brace Wrapping (K&R/Egyptian Brace Style) ---
 BreakBeforeBraces: Custom
@@ -13,14 +22,14 @@ BraceWrapping:
   AfterCaseLabel: false # case X: { ... }
   AfterControlStatement: false # if (...) { ... }
   AfterEnum: false # enum E { ... }
-  AfterFunction: false # void func() { ... } -- Key change from Linux Kernel style
+  AfterFunction: false # void func() { ... }
   AfterNamespace: false # namespace N { ... }
   AfterStruct: false # struct S { ... }
   AfterUnion: false # union U { ... }
   AfterExternBlock: false # extern "C" { ... }
-  BeforeCatch: false # } catch (...) { (C++ specific)
+  BeforeCatch: false # } catch (...) { (C++ only)
   BeforeElse: false # } else {
-  BeforeLambdaBody: false # C++ specific
+  BeforeLambdaBody: false # } lambda { (C++ only)
   BeforeWhile: false # } while (...) (for do/while loops)
   SplitEmptyFunction: true # void func() {}
   SplitEmptyRecord: true # struct S {};
@@ -28,28 +37,33 @@ BraceWrapping:
 
 # --- Line Breaking & Short Statements ---
 ColumnLimit: 100
-AllowShortIfStatementsOnASingleLine: false # if (condition) return;
+AllowShortIfStatementsOnASingleLine: Never # Never collapse: if (x) return;
 AllowShortLoopsOnASingleLine: true # for (int i=0; i<N; ++i) do_something();
-AllowShortFunctionsOnASingleLine: Inline # void func() { return; } (for very short functions)
-BreakBeforeBinaryOperators: None # Keep operators with their right operand (e.g., a + b)
-BreakBeforeTernaryOperators: true # Break before '?' and ':' in ternary operator
+AllowShortFunctionsOnASingleLine: Empty # Only collapse empty stubs: void func() {}
+BreakBeforeBinaryOperators: NonAssignment # Lead continuation lines with operator for clarity
+BreakBeforeTernaryOperators: true # Break before '?' and ':' in ternary
+
+# --- Preprocessor ---
+IndentPPDirectives: AfterHash # Cleaner nesting for #elifdef/#elifndef (C23)
 
 # --- Spacing ---
 SpaceBeforeParens: ControlStatements # 'if ()', 'for ()', etc.
 SpaceBeforeSquareBrackets: false
-SpacesInAngles: false # For C++ templates: std::vector<int>
-SpacesInCStyleCastParentheses: false # (int)x
-SpacesInParentheses: false # ( a + b )
-SpacesInSquareBrackets: false # array[ index ]
-SpacesBeforeTrailingComments: 1 # Number of spaces before a line comment // like this
+SpacesInAngles: false # std::vector<int> not std::vector< int > (C++ only)
+SpacesInCStyleCastParentheses: false # (int)x not ( int )x
+SpacesInParentheses: false # (a + b) not ( a + b )
+SpacesInSquareBrackets: false # array[index] not array[ index ]
+SpacesBeforeTrailingComments: 1 # Single space before // comments
 
 # --- Pointer & Reference Alignment ---
-PointerAlignment: Right # int *ptr; (LLVM default)
-ReferenceAlignment: Left # int &ref (C++ specific)
+PointerAlignment: Right # int *ptr; -- binds * to name, not type (K&R/Linux style)
+ReferenceAlignment: Left # int &ref; -- binds & to type (C++ only)
 
 # --- Blank Lines ---
-MaxEmptyLinesToKeep: 1 # Avoids excessive blank lines.
+MaxEmptyLinesToKeep: 1 # Avoids excessive blank lines
 
 # --- Include Formatting ---
-IncludeBlocks: Regroup # Groups includes like <sys/types.h>, "my_header.h"
-SortIncludes: true # Sorts includes alphabetically within blocks.
+# Regroup requires IncludeCategories to be defined; without them it's a no-op.
+# Preserve keeps your manual grouping intact.
+IncludeBlocks: Preserve
+SortIncludes: CaseSensitive # Sorts alphabetically; explicit form of deprecated 'true'
